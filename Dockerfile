@@ -13,7 +13,7 @@ WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
 
 # 設定預設 Port
-EXPOSE 8080
+EXPOSE 8080 
 
 # 啟動命令
 ENTRYPOINT ["java", "-jar", "app.jar"]
